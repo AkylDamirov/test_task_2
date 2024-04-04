@@ -13,7 +13,7 @@ engine = create_engine(DATABASE_URL)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 Base = sqlalchemy.orm.declarative_base()
 
-gmaps = googlemaps.Client(key='AIzaSyCb4hUzElFNSfR-c5k3i5zSzs9egoXB8r8')
+gmaps = googlemaps.Client(key='YOUR KEY')
 
 class City(Base):
     __tablename__ = "cities"
